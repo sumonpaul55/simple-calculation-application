@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Bank management</title>
+</head>
+
+<body>
+    <div class="max-w-[800px] mx-auto">
+        <h1 class="text-4xl text-center mt-10 font-bold">Bank managment System</h1>
+        <div class="bank-content">
+            <div class="grid grid-cols-3 gap-5 md:gap-20 mt-32 m-3">
+                <div class="p-10 bg-purple-800 text-white shadow shadow-purple ">
+                    <H3 class="mb-5 text-2xl">Diposite</H3>
+                    <div>
+                        <span class="text-4xl">$</span>
+                        <span id="diposite-amount"
+                              class="text-4xl">00</span>
+                    </div>
+                </div>
+                <div class="p-10 bg-indigo-800 text-white shadow shadow-purple ">
+                    <H3 class="mb-5 text-2xl">Withdraw</H3>
+                    <div>
+                        <span class="text-4xl">$</span>
+                        <span id="withdraw-amount"
+                              class="text-4xl">00</span>
+                    </div>
+                </div>
+                <div class="p-10 bg-purple-800 text-white shadow shadow-purple ">
+                    <div class="mb-5 text-2xl space-y-5">
+                        <H3 class="">Balance</H3>
+                        <div>
+                            <span class="text-4xl">$</span>
+                            <span id="total"
+                                  class="text-4xl">1224</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flex bg-blue-200 p-5 justify-center gap-10 mt-10">
+                <div class="p-1 flex-1">
+                    <input type="number"
+                           id="diposite-field"
+                           class="w-full p-1 outline-none"
+                           placeholder="Deposite">
+                    <button id="dipositeBtn"
+                            class="px-10 py-2 mt-10 mx-auto text-white bg-purple-500 rounded-lg hover:bg-indigo-800 cursor-pointer duration-200">Diposite</button>
+                </div>
+                <div class="p-1 flex-1">
+                    <input type="number"
+                           id="withdraw-field"
+                           class="w-full p-1 outline-none"
+                           placeholder="Withdraw">
+                    <button id="withdrawBtn"
+                            class="px-10 py-2 mt-10 mx-auto text-white bg-purple-500 rounded-lg hover:bg-indigo-800 cursor-pointer duration-200">Withdraw</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="bank.js"></script>
+
+</body>
+
+</html>
